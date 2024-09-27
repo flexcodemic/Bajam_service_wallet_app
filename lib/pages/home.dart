@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // List of pages to switch between (currently only the DashboardPage is used)
   final List<Widget> _pages = <Widget>[
-    DashboardGrid(), // Grid view for dashboard items
+    const DashboardGrid(), // Grid view for dashboard items
     const Center(child: Text('Savings Page')),
     const Center(child: Text('Loan Page')),
     const Center(child: Text('Account Page')),

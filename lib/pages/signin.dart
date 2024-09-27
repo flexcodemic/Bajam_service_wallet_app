@@ -80,7 +80,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     TextFormField(
                       obscureText: true,
@@ -213,26 +213,26 @@ class _SignInScreenState extends State<SignInScreen> {
                       ],
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 14,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Logo(
                           Logos.facebook_f,
-                          size: 20,
+                          size: 14,
                         ),
                         Logo(
                           Logos.twitter,
-                          size: 20,
+                          size: 14,
                         ),
                         Logo(
                           Logos.google,
-                          size: 20,
+                          size: 14,
                         ),
                         Logo(
                           Logos.apple,
-                          size: 20,
+                          size: 14,
                         ),
                       ],
                     ),
