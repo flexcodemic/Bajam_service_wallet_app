@@ -1,5 +1,5 @@
-import 'package:bajam_app/pages/home.dart';
 import 'package:bajam_app/pages/signup.dart';
+import 'package:bajam_app/pages/welcome.dart';
 import 'package:bajam_app/theme.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:bajam_app/widgets/custom_scafford.dart';
@@ -14,6 +14,8 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   final _formSignInKey = GlobalKey<FormState>();
   bool rememberPassword = true;
+  
+  get firstName => '';
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +166,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const HomeScreen(),
+                              builder: (context) => WelcomeScreen(firstName: firstName),
                             ),
                           );
                         },
