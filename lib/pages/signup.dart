@@ -265,19 +265,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           // Social media sign in login option
                           Logo(
                             Logos.facebook_f,
-                            size: 20,
+                            size: 14,
                           ),
                           Logo(
                             Logos.twitter,
-                            size: 20,
+                            size: 14,
                           ),
                           Logo(
                             Logos.google,
-                            size: 20,
+                            size: 14,
                           ),
                           Logo(
                             Logos.apple,
-                            size: 20,
+                            size: 14,
                           ),
                         ],
                       ),
