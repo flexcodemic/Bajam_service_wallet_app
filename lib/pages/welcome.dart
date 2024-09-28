@@ -22,6 +22,7 @@ class WelcomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
+            color: AppColors.white,
             onPressed: () {
               // Log out logic, navigate to SignIn screen
               Navigator.pushReplacement(
@@ -61,7 +62,7 @@ class WelcomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 20.0), // Add spacing from the top
+                // const SizedBox(height: 20.0), // Add spacing from the top
                 Text(
                   'Welcome, $firstName!',
                   style: const TextStyle(
@@ -70,23 +71,23 @@ class WelcomeScreen extends StatelessWidget {
                     color: AppColors.primary,
                   ),
                 ),
-                const SizedBox(height: 10.0),
+                // const SizedBox(height: 10.0),
                 const Text(
                   'Account Status: Active', // Placeholder for account info
                   style: TextStyle(
                     fontSize: 16.0,
-                    color: AppColors.darkgrey,
+                    color: AppColors.white,
                   ),
                 ),
                 const SizedBox(height: 30.0),
                 // Image at the center
                 Container(
-                  width: 150,
-                  height: 150,
+                  width: 420,
+                  height: 200,
                   decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
+                    // shape: BoxShape.circle,
                     image: DecorationImage(
-                      image: AssetImage('assets/images/welcome_image.png'),
+                      image: AssetImage('assets/images/undraw_Welcome.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
