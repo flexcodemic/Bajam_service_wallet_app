@@ -1,3 +1,4 @@
+import 'package:bajam_app/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:bajam_app/theme.dart';
 import 'package:bajam_app/widgets/custom_scafford.dart';
@@ -14,10 +15,8 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Bajam Wallet',
-          style: TextStyle(
-            color: AppColors.white
-          ),
-          ),
+          style: TextStyle(color: AppColors.white),
+        ),
         backgroundColor: AppColors.primary,
         actions: [
           IconButton(
@@ -106,6 +105,12 @@ class WelcomeScreen extends StatelessWidget {
                       child: InkWell(
                         onTap: () {
                           // Logic for making a transaction
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomeScreen(),
+                            ),
+                          );
                         },
                         child: SizedBox(
                           width: MediaQuery.of(context).size.width * 0.4,

@@ -42,6 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
             _selectedIndex], // Display the selected page (grid or other pages)
         backgroundColor: AppColors.primary,
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: AppColors.primary,
           currentIndex: _selectedIndex, // Current selected index
           onTap: _onItemTapped, // Tap handler
           selectedItemColor: AppColors.primary, // Selected item color (teal)
